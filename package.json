@@ -3,6 +3,14 @@
   "version": "0.1.4",
   "description": "n8n community node that parses FastField Forms multipart webhook submissions and preserves binary files",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LindezaGrey/n8n-nodes-fastfieldforms-webhook"
+  },
+  "homepage": "https://github.com/LindezaGrey/n8n-nodes-fastfieldforms-webhook#readme",
+  "bugs": {
+    "url": "https://github.com/LindezaGrey/n8n-nodes-fastfieldforms-webhook/issues"
+  },
   "publishConfig": {
     "access": "public"
   },
