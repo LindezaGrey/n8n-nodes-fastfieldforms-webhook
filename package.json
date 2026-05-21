@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-fastfieldforms-webhook",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "n8n community node that parses FastField Forms multipart webhook submissions and preserves binary files",
   "license": "MIT",
   "publishConfig": {
