@@ -56,6 +56,29 @@ npm login
 npm publish --access public
 ```
 
+## GitHub npm Publish Workflow
+
+This repository includes a GitHub Actions workflow at
+.github/workflows/npm-publish.yml that:
+
+- runs lint, build, and npm pack --dry-run checks
+- publishes when you push a semantic version tag like v0.1.1
+- supports manual runs from the Actions tab
+
+### One-time setup
+
+1. Create an npm access token with publish rights.
+2. In GitHub, add repository secret NPM_TOKEN.
+
+### Release flow
+
+```bash
+npm version patch
+git push --follow-tags
+```
+
+The workflow will publish the new version to npm.
+
 ## License
 
 MIT
