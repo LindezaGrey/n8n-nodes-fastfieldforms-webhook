@@ -1,0 +1,42 @@
+{
+  "name": "n8n-nodes-fastfieldforms-webhook",
+  "version": "0.1.0",
+  "description": "n8n community node that parses FastField Forms multipart webhook submissions and preserves binary files",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "webhook",
+    "multipart",
+    "fastfield",
+    "fastfieldforms"
+  ],
+  "author": "LindezaGrey",
+  "main": "dist/nodes/FastFieldFormsWebhook/FastFieldFormsWebhook.node.js",
+  "scripts": {
+    "build": "tsc && cp nodes/FastFieldFormsWebhook/logo.svg dist/nodes/FastFieldFormsWebhook/logo.svg",
+    "dev": "tsc --watch",
+    "lint": "tsc --noEmit",
+    "prepack": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "nodes": [
+      "dist/nodes/FastFieldFormsWebhook/FastFieldFormsWebhook.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "n8n-workflow": "^1.100.0",
+    "typescript": "^5.4.5"
+  }
+}
